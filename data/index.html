@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LED control with ESP32 through Websocket</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="toggle-wrapper">
+            <div class="title">Red</div>
+            <div class="toggle normal">
+              <input id="red" class="checkbox" type="checkbox" %RED_STATE%/>
+              <label class="toggle-item" for="normal"></label>
+            </div>
+        </div>
+        <div class="toggle-wrapper">
+            <div class="title">Green</div>
+            <div class="toggle normal">
+              <input id="green" class="checkbox" type="checkbox" %GREEN_STATE%>
+              <label class="toggle-item" for="normal"></label>
+            </div>
+        </div>
+        <div class="toggle-wrapper">
+            <div class="title">Blue</div>
+            <div class="toggle normal">
+              <input id="blue" class="checkbox" type="checkbox" %BLUE_STATE%/>
+              <label class="toggle-item" for="normal"></label>
+            </div>
+        </div>
+    </div>
+    <script src="script/socket.js"></script>
+</body>
+
+</html>
